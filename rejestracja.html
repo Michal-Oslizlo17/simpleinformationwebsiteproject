@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Moja Nowoczesna Strona (REG)</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Moja Strona</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Strona Główna</a></li>
+            <li><a href="#">O Nas</a></li>
+            <li><a href="#">Usługi</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <div id="header-text"></div>
+        </header>
+        <h2>Witaj na podstronie rejestracji!</h2>
+        <p>Baza uczniów</p>
+
+        <container id="TXTDATAS">
+            <form method="post">
+                <label><strong>Dane: </strong></label><br><br>
+                <label id="Dane">Imie: </label><br><input type="text" name="imie" id="inputtext" required maxlength="25"
+                    onclick="changeColor()"><br>
+                <label id="Dane">Nazwisko: </label><br><input type="text" name="nazwisko" id="inputtextA" required
+                    maxlength="25" onclick="changeColorA()"><br>
+                <label id="Dane">Zawod: </label><br><input type="text" name="zawod" id="inputtextB" required
+                    maxlength="25" onclick="changeColorB()"><br>
+                <label id="Dane">PESEL: </label><br><input type="text" name="pesel" id="inputtextC" required
+                    maxlength="11" onclick="changeColorC()"><br>
+                <label id="Dane">E-MAIL: </label><br><input type="text" name="mail" id="inputtextD" required
+                    maxlength="50" onclick="changeColorD()"><br>
+                <label id="Dane">Telefon: </label><br><input type="text" name="telefon" id="inputtextE" required
+                    maxlength="9" onclick="changeColorE()"><br>
+                <label id="Dane">Ulica: </label><br><input type="text" name="ulica" id="inputtextF" required
+                    maxlength="20" onclick="changeColorF()"><br>
+                <label id="Dane">Miasto: </label><br><input type="text" name="miasto" id="inputtextG" required
+                    maxlength="25" onclick="changeColorG()"><br>
+                <label id="Dane">Kod pocztowy: </label><br><input type="text" name="kodpocztowy" id="inputtextH"
+                    maxlength="20" onclick="changeColorH()"><br><br>
+                <input type="reset" value="Resetuj">
+                <input type="submit" value="Wyślij dane">
+            </form>
+        </container>
+
+        <div id="control-panel">
+            <button id="return-button">Powrót</button>
+            <button id="register-button">Odśwież stronę rejestracji</button>
+            <button id="database-button">Zobacz bazę danych</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script src="button.js"></script>
+<script src="anim.js"></script>
+
+</html>
