@@ -80,26 +80,6 @@ button:hover {
   color: white;
 }
 
-#register-button {
-  background-color: blue;
-  color: white;
-}
-
-#register-button:hover {
-  background-color: #333;
-  color: white;
-}
-
-#database-button {
-  background-color: blue;
-  color: white;
-}
-
-#database-button:hover {
-  background-color: #333;
-  color: white;
-}
-
 #return-button {
   background-color: blue;
   color: white;
@@ -155,4 +135,12 @@ button:hover {
   padding: 14px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#znacznik {
+  color: cornflowerblue;
+}
+
+#description {
+  color: #a70059;
 }
