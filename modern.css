@@ -145,3 +145,14 @@ button:hover {
 #inputtextH {
   width: 250px;
 }
+
+#info {
+  width: 80%;
+  border-radius: 20px;
+  border: 2px;
+  border-color: #383434;
+  border-style: solid;
+  padding: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
