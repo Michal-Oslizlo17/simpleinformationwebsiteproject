@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website - HTML</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Moja Strona</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="podstawowe_info-HTML.html">Podstawowe infromacje</a></li>
+            <li><a href="szablon-HTML.html">Szablon</a></li>
+            <li><a href="szczegolowe_info-HTML.html">Szczegółowe informacje</a></li>
+            <li><a href="praktyczne_przyk-HTML.html">Praktyczne przykłady</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <div id="header-text"></div>
+        </header>
+        <h2>Witaj na podstronie informacji!</h2>
+        <p>Obecny temat to: <b>HTML</b></p><br>
+
+        <div id="info">
+            <h2>CSS</h2><br> --- <br><br>
+            CSS to technologia, która pozwala na dużą swobodę w formatowaniu dokumentów HTML. Upraszcza nie tylko
+            tworzenie stron WWW, ale również ich późniejszą modyfikację.
+            <br> ---<br><br>
+            <h2>Na co pozwala nam CSS</h2><br> --- <br><br>
+            Pozwala ustalić zbiorczy styl dla całej witryny.Wszelkie modyfikacje oznaczają zmiany tylko w jednym pliku
+            stylów.Rozmiar plików HTML po zastosowaniu stylów maleje, czasem bardzo pokaźnie. Mniejsze pliki to mniejszy
+            transfer i szybsze ładowanie stron. Przeglądarka przechowuje plik CSS w swoim buforze.
+            <br> ---<br><br>
+            <h2>Sposoby wprowadzania stylów</h2><br> --- <br><br>
+            Style umieszczane lokalnie<br>
+            Jest to najprostsza metoda definiowania stylu dla danej sekcji witryny. W przykładzie dla znacznika
+            <b>div</b> ustalana jest ramka o grubości jednego piksela po lewej stronie bloku tekstu. Pomiędzy nawiasami
+            zamykającymi atrybut, tj. style=„", możemy umieścić dowolną ilość właściwości CSS. Ta metoda wprowadza
+            bałagan w kodzie, lecz gdy konkretnego stylu używamy tylko raz, umieszczanie stylów lokalnie może być
+            uzasadnione. Jednak profesjonalni webmasterzy nie używają tej metody, bo nie spełnia ona zasady: osobno
+            treść, osobno prezentacja.
+            <br> --- <br><br>
+            Style w nagłówku strony<br>
+            !!zdjęcie!!
+            Wirtualna Polska wszystkie swoje style umieszcza w nagłówku kodu źródłowego każdej strony. Wszystkie
+            ustalenia CSS są umieszczane pomiędzy znacznikami <b>style</b>. Dlaczego nie wrzucono wszystkich deklaracji
+            do jednego pliku zewnętrznego?
+            W przypadku serwisów popularnych, takich jak portale czy wyszukiwarki, bezpieczniejsze jest umieszczenie
+            wszystkich danych o generowanej witrynie w jednym pliku. Strony takie jak WP.pl są generowane za pomocą
+            programów (tzw. generowanie dynamiczne stron, np. przy użyciu PHP), a następnie buforowane w celu uzyskania
+            wyższej wydajności.
+            <br> --- <br><br>
+            Style jako zewnętrzny plik CSS<br>
+            Znacznik <b>link</b> wskazuje lokalizację zewnętrznego pliku CSS, tj. "style.css". W tym samym katalogu utworzymy plik o takiej nazwie i rozszerzeniu, wstawiając do niego: !!zdjęcie!!
+
+            <br>
+
+
+
+        </div><br><br><br><br><br>
+
+        <div id="control-panel">
+            <button id="return-button">Powrót</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script src="button.js"></script>
+<script src="anim.js"></script>
+
+</html>
