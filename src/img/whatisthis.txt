@@ -1,0 +1,5 @@
+# -----------------------------
+# Tutaj są pliki z destynacjami
+# -----------------------------
+
+# This is simple, remember it :3
