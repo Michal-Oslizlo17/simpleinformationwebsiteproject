@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website - JS </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Moja Strona</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="podstawowe_info-JS.html">Podstawowe infromacje</a></li>
+            <li><a href="szablon-JS.html">Szablon</a></li>
+            <li><a href="szczegolowe_info-JS.html">Szczegółowe informacje</a></li>
+            <li><a href="praktyczne_przyk-JS.html">Praktyczne przykłady</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <div id="header-text"></div>
+        </header>
+        <h2>Witaj na podstronie informacji!</h2>
+        <p>Obecny temat to: <b>JavaScript</b></p><br>
+
+        <div id="info">
+            <h2>Funkcje w JS</h2><br> --- <br><br>
+            funkcje oznacza słowo kluczowe:
+            <text id="znacznik">function()</text><br>
+            funkcje mogą przyjmować parametry,<br>
+            funkcje mogą być nazwane:<br>
+            function wypisz (tekst)<br>
+            parametry funkcji nie są sprawdzane, więc poprawne zarówno wypisz() jak i wypisz(1, ”a”)<br> --- <br><br>
+            <h2>Przykład</h2><br> --- <br><br>
+            <img src="js4.jpg">
+            <h2>Zmienne</h2><br> --- <br><br>
+            Zmienne przechowują wartości dowolnych typów. Jeśli zmienna nie została użyta w programie to ma wartość
+            <text id="znacznik">undefined</text>.<br>
+            Problemem sprawiającym dużo kłopotów jest to, iż wszystkie zmienne są globalne, chyba że zostaną
+            zadeklarowane wewnątrz funkcji za pomocą słowa kluczowego <text id="znacznik">var</text>.<br> --- <br><br>
+            <h2>Lokalność zmiennych</h2><br> --- <br><br>
+            <img src="js.jpg">
+            <br> --- <br><br>
+            <h2>Typy zmiennych</h2><br> --- <br><br>
+            Liczby różnią się od napisów.<br>
+            Napisy zapisujemy ”w cudzysłowach” lub 'tak‘.<br>
+            Nie musimy przejmować się konwersją liczb całkowitych i zmiennoprzecinkowych.<br>
+            Operator ”+” dodaje liczby ale łączy (konkatenuje) napisy.<br>
+            JS sam domyśla się, czy coś powinno być liczbą czy napisem.<br>
+            Istnieje prawda (true) i fałsz (false).<br>
+            <br> --- <br><br>
+            <h2>Różne wyrażenia</h2><br> --- <br><br>
+            <img src="js2.jpg">
+            <br> --- <br><br>
+            <h2>Instrukcje JS</h2><br> --- <br><br>
+            JavaScript obsługuje wszystkie instrukcje typowe dla języków podobnych do C, C++ i Javy:
+            <text id="znacznik">while</text><br>
+            <text id="znacznik">for</text><br>
+            <text id="znacznik">if</text><br>
+            <text id="znacznik">return</text><br>
+            <text id="znacznik">switch</text><br>
+            <text id="znacznik">break</text><br>
+            <text id="znacznik">continue</text><br>
+            <text id="znacznik">try catch</text><br>
+            <br> --- <br><br>
+            <h2>Napisy</h2><br> --- <br><br>
+            - napis[3] – czwarta litera napisu.<br>
+            - napis.length – długość napisu.<br>
+            - napis.indexOf('b')) – pierwsze wystąpienie b lub -1 jeśli b w napisie nie występuje.<br>
+            - napis.lastIndexOf('a') – ostatnie wystąpienie a.<br>
+            - napis.substr(1,3) – fragment napisu od drugiej litery zawierający trzy znaki.<br>
+            <br> --- <br><br>
+            <h2>Przykłady użycia napisów</h2><br> --- <br><br>
+            <img src="js3.jpg">
+            <br> --- <br><br>
+            <h2>Obsługa liczb</h2><br> --- <br><br>
+            <text id="znacznik">Math.abs(a)</text> // wartość bezwzględna a<br>
+            <text id="znacznik">Math.ceil(a)</text> // sufit a<br>
+            <text id="znacznik">Math.floor(a)</text>  // podłoga a<br>
+            <text id="znacznik">Math.max(a,b) </text> // maksimum z a i b<br>
+            <text id="znacznik">Math.min(a,b)</text> // minimum z a i b<br>
+            <text id="znacznik">Math.pow(a,b)</text> // a do potęgi b<br>
+            <text id="znacznik">Math.random()</text>  // pseudolosowa liczba od 0 do 1<br>
+            <text id="znacznik">Math.round(a)</text> // zaokrąglenie a<br>
+            <text id="znacznik">Math.sqrt(a)</text> // pierwiastek kwadratowy z a<br>
+            <br> --- <br><br>
+        </div><br><br><br><br><br>
+
+        <div id="control-panel">
+            <button id="return-button">Powrót</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script src="button.js"></script>
+<script src="anim.js"></script>
+
+</html>

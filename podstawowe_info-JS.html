@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website - JS </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Moja Strona</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="podstawowe_info-JS.html">Podstawowe infromacje</a></li>
+            <li><a href="szablon-JS.html">Szablon</a></li>
+            <li><a href="szczegolowe_info-JS.html">Szczegółowe informacje</a></li>
+            <li><a href="praktyczne_przyk-JS.html">Praktyczne przykłady</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <div id="header-text"></div>
+        </header>
+        <h2>Witaj na podstronie informacji!</h2>
+        <p>Obecny temat to: <b>JavaScript</b></p><br>
+
+        <div id="info">
+            <h2>JavaScript</h2><br> --- <br><br>
+            JavaScript, to język programowania, obsługiwany przez wiele współczesnych przeglądarek WWW:
+            Internet Explerer,
+            Opera,
+            Safari,
+            Firefox,
+            Google Chrome.<br> --- <br><br>
+            <h2>Na co pozwala JavaScript?</h2><br> --- <br><br>
+            JavaScript (JS) pozwala m. in. na:
+            dynamiczne modyfikowanie zawartości stron,
+            reagowanie na akcje podejmowane przez użytkownika (kliknięcie, wpisanie tekstu, ruch myszką,
+            przeprowadzanie obliczeń.
+            <br> --- <br><br>
+            <h2>Jak działa JavaScript?</h2><br> --- <br><br>
+            - przeglądarka próbuje wyświetlić stronę napisaną w HTML<br>
+            - napotyka na znacznik script<br>
+            - zaczyna interpretować program zawarty w znaczniku script<br>
+            - funkcja document.write <br>
+            – wpisuje argument do wyświetlanego okienka<br>
+            - funkcja alert <br>
+            – pokazuje nowe okienko<br><br> --- <br><br>
+            <h2>Znacznik script</h2><br> --- <br><br>
+            Znacznik script
+            - type = 'text/javascript' – czyli program jest w javascripcie, ale czy mógłby być w innym języku?<br>
+            - teoretycznie tak, np. konqueror pozwala na dołączanie programów w pythonie<br>
+            - a co zrobić z przeglądarką, która nie obsługuje javascriptu?<br>
+            użyć znacznika noscript. <br> --- <br><br>
+            <h2>Dołączanie zewnętrznych JS?</h2><br> --- <br><br>
+            Niekiedy chcemy oddzielić programy w JS od stron HTML.
+            Czy program w JS może być w oddzielnym pliku?
+            - Tak. Używamy w tym celu atrybutu src:
+            <text id="znacznik">&lt;script type="text/javascript" src="skrypt.js"&gt;&lt;/script&gt;</text>
+
+
+        </div><br><br><br><br><br>
+
+        <div id="control-panel">
+            <button id="return-button">Powrót</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script src="button.js"></script>
+<script src="anim.js"></script>
+
+</html>
