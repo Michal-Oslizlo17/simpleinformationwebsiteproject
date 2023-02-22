@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Moja Strona</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="podstawowe_info-CSS.html">Podstawowe infromacje</a></li>
+            <li><a href="szablon-CSS.html">Szablon</a></li>
+            <li><a href="szczegolowe_info-CSS.html">Szczegółowe informacje</a></li>
+            <li><a href="praktyczne_przyk-CSS.html">Praktyczne przykłady</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <div id="header-text"></div>
+        </header>
+        <h2>Witaj na podstronie informacji!</h2>
+        <p>Obecny temat to: <b>CSS</b></p><br>
+
+        <div id="info">
+            <h2>Kilka praktycznych przykladów</h2><br> --- <br><br>
+            Zmiana koloru tła strony:
+            <br> --- <br><br>
+            <text id="znacznik">body</text> {
+                background-color: #f2f2f2;
+              }
+              <br> --- <br><br>
+              Dodanie stylu dla nagłówka h1:
+              <br> --- <br><br>
+              <text id="znacznik">h1</text> {
+                font-size: 36px;
+                color: #333;
+                text-align: center;
+                margin-top: 50px;
+              }
+              <br> --- <br><br>
+              Zmiana koloru tła i koloru czcionki dla przycisków:
+              <br> --- <br><br>
+              <text id="znacznik">button </text>{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              <br>
+              <text id="znacznik">button:hover</text> {
+                background-color: #3e8e41;
+              }
+              <br> --- <br><br>
+              Ustawienie obrazka tła na stronie:
+              <br> --- <br><br>
+              <text id="znacznik">body</text> {
+                background-image: url('background-image.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              <br> --- <br><br>
+              Dodanie stylu dla tabeli:
+              <br> --- <br><br>
+              <text id="znacznik">table </text> {
+                border-collapse: collapse;
+                width: 100%;
+              }
+              <br>
+              <text id="znacznik">th, td</text> {
+                text-align: left;
+                padding: 8px;
+              }
+              <br>
+              <text id="znacznik">th</text> {
+                background-color: #4CAF50;
+                color: white;
+              }
+              <br>
+              <text id="znacznik">tr:nth-child(even)</text> 
+              {
+                background-color: #f2f2f2;
+              }
+              <br> --- <br><br>
+              Zmiana stylu linków:
+              <br> --- <br><br>
+              <text id="znacznik">a </text>{
+                color: #4CAF50;
+                text-decoration: none;
+              }
+              <br>
+              <text id="znacznik">a:hover</text> {
+                text-decoration: underline;
+              }
+              <br> --- <br><br>
+              Dodanie animacji dla przycisku:
+              <br> --- <br><br>
+              <text id="znacznik">.button</text> {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition-duration: 0.4s;
+              }
+              <br>
+              <text id="znacznik">.button:hover</text> {
+                background-color: #3e8e41;
+              }
+              <br> --- <br><br>
+        </div><br><br><br><br><br>
+
+        <div id="control-panel">
+            <button id="return-button">Powrót</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script src="button.js"></script>
+<script src="anim.js"></script>
+
+</html>
