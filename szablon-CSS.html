@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Moja Strona</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="podstawowe_info-CSS.html">Podstawowe infromacje</a></li>
+            <li><a href="szablon-CSS.html">Szablon</a></li>
+            <li><a href="szczegolowe_info-CSS.html">Szczegółowe informacje</a></li>
+            <li><a href="praktyczne_przyk-CSS.html">Praktyczne przykłady</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <div id="header-text"></div>
+        </header>
+        <h2>Witaj na podstronie informacji!</h2>
+        <p>Obecny temat to: <b>CSS</b></p><br>
+
+        <div id="info">
+            <h2>Przykładowy szablon języka CSS</h2><br> --- <br><br>
+            /* Resetowanie stylów domyślnych */
+            <br> <text id="znacznik">*</text>{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }<br>
+
+            /* Globalne style */
+            <br><text id="znacznik">body</text> {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            }
+            <br>
+            /* Nagłówki */
+            <br><text id="znacznik">h1</text> {
+            font-size: 36px;
+            font-weight: bold;
+            }<br>
+
+            <br> <text id="znacznik">h2 </text>{
+            font-size: 24px;
+            font-weight: bold;
+            }<br>
+
+            <br><text id="znacznik">h3 </text> {
+            font-size: 18px;
+            font-weight: bold;
+            }<br>
+
+            /* Przykładowa klasa */
+            <br><text id="znacznik">.example-class</text> {
+            color: #007bff;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            }<br>
+
+            <br> --- <br><br>
+
+        </div><br><br><br><br><br>
+
+        <div id="control-panel">
+            <button id="return-button">Powrót</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script src="button.js"></script>
+<script src="anim.js"></script>
+
+</html>
