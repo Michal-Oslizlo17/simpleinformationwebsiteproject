@@ -1,4 +1,4 @@
-const text = "Powtórzenie danych - Projekt HTML";
+const text = "Powtórzenie danych - Projekt HTML <-----> Ta strona zawiera powtórzenie o podstawowych językach programowania stron internetowych, takich jak HTML, CSS, PHP i JavaScript, a także opcji multimedialnych. Znajdziesz tu opisy składni i zasad działania tych języków oraz przykłady kodów, które pomogą Ci zrozumieć jak działa tworzenie stron internetowych. Dodatkowo, strona przedstawi Ci różne opcje multimedialne, takie jak zdjęcia, filmy, dźwięki czy animacje, oraz jak je stosować na stronie internetowej. To idealne miejsce dla początkujących, którzy chcą pogłębić swoją wiedzę na temat tworzenia stron internetowych.";
 let index = 0;
 
 const typeWriter = () => {
