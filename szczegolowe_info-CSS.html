@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Website - HTML</title>
+    <title>Website - CSS</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="modern.css">
 </head>
@@ -15,10 +15,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="podstawowe_info-HTML.html">Podstawowe infromacje</a></li>
-            <li><a href="szablon-HTML.html">Szablon</a></li>
-            <li><a href="szczegolowe_info-HTML.html">Szczegółowe informacje</a></li>
-            <li><a href="praktyczne_przyk-HTML.html">Praktyczne przykłady</a></li>
+            <li><a href="podstawowe_info-CSS.html">Podstawowe infromacje</a></li>
+            <li><a href="szablon-CSS.html">Szablon</a></li>
+            <li><a href="szczegolowe_info-CSS.html">Szczegółowe informacje</a></li>
+            <li><a href="praktyczne_przyk-CSS.html">Praktyczne przykłady</a></li>
         </ul>
     </nav>
     <main>
@@ -26,7 +26,7 @@
             <div id="header-text"></div>
         </header>
         <h2>Witaj na podstronie informacji!</h2>
-        <p>Obecny temat to: <b>HTML</b></p><br>
+        <p>Obecny temat to: <b>CSS</b></p><br>
 
         <div id="info">
             <h2>Kolory w CSS</h2><br> --- <br><br>
@@ -35,14 +35,46 @@
             Dziesiętne i procentowe wartości RGB<br>
             <br>
             <h2>Opisowe nazwy kolorów</h2><br> --- <br><br>
-            Istnieje 140 predefiniowanych nazw, z których każda znajduje swój odpowiednik w postaci kodu RGB. Niestety, nie mamy gwarancji, 
-            że te nazwy będą działały ze wszystkimi przeglądarkami. Istnieje jednak 16 podstawowych nazw, które na pewno obsłuży każda przeglądarka:
-            black, white, aqua, blue, fuschia, grey, green, lime, maroon, navy, olive, purple, red, silver, teal, yellow.<br><br>
+            Istnieje 140 predefiniowanych nazw, z których każda znajduje swój odpowiednik w postaci kodu RGB. Niestety,
+            nie mamy gwarancji,
+            że te nazwy będą działały ze wszystkimi przeglądarkami. Istnieje jednak 16 podstawowych nazw, które na pewno
+            obsłuży każda przeglądarka:
+            black, white, aqua, blue, fuschia, grey, green, lime, maroon, navy, olive, purple, red, silver, teal,
+            yellow.<br><br>
             <h2>Szesnastkowe wartości RGB</h2><br> --- <br><br>
-            Zapis szesnastkowy to trzy pary wartości ustalające kolejne składowe RGB. W przykładzie kolor składa się z trzech par wartości o tych samych 
+            <text id="znacznik">color:</text>#0000ff;<br>
+            <br> --- <br><br>
+            Zapis szesnastkowy to trzy pary wartości ustalające kolejne składowe RGB. W przykładzie kolor składa się z
+            trzech par wartości o tych samych
             kolorach. W CSS możemy uprościć ten zapis wg reguły: #aabbcc = #abc.
-            Zatem poniższa, trzyliterowa notacja zostanie obsłużona prawidłowo przez przeglądarki
+            Zatem poniższa, trzyliterowa notacja zostanie obsłużona prawidłowo przez przeglądarki.
+            <br><br>
+            <text id="znacznik">color:</text>#00f;<br>
+            <br> --- <br><br>
+            <br>
+            <h2>Dziesiętne i procentowe wartości RGB</h2><br> --- <br><br>
+            <text id="znacznik">color:</text> rgb(0, 0, 255);<br>
+            <text id="znacznik">color:</text> rgb(0%, 0%, 100%);<br>
+            <br> --- <br><br>
+            To zdecydowanie najrzadziej stosowana metoda zapisu. Kolor czarny przy takiej reprezentacji to: rgb(0, 0,
+            0), a biały: rgb(255, 255, 255). W notacji procentowej będzie to odpowiednio: rgb(0%, 0%, 0%), rgb(100%,
+            100%, 100%).
+            <br> --- <br><br>
+            <br>
+            <h2>Dziedziczenie</h2><br> --- <br><br>
+            W CSS podstawowym mechanizmem przydzielającym reguły jest dziedziczenie. Spójrzmy na fragment kodu:
+            <br> --- <br><br>
+            <img src="dziedziczenie_css.jpg"><br> <br><br>
+            <br> --- <br><br>
+            <br>
+            <h2>Klasy selektorów</h2><br> --- <br><br>
+            <text id="znacznik">selektor.klasa</text>{ cecha: wartość }<br>
+            <br> --- <br><br>
+            Selektorem może być dowolny znacznik, np. <text id="znacznik">p</text> - akapit, <text id="znacznik">h1</text> - tytuł czy <text id="znacznik">td</text> - komórka tabeli i inne)<br>
 
+            Klasa to wartość atrybutu <text id="znacznik">class="..."</text> nadanego selektorowi z poziomu języka (X)HTML.<br>
+
+            Natomiast wyrazy "cecha" oraz "wartość" określają atrybuty elementu nadane poprzez style.<br>
 
 
         </div><br><br><br><br><br>
