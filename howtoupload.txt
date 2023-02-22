@@ -1,0 +1,5 @@
+1. Pierw przejdź do ścieżki gdzie jest projekt tak aby wyświetlała Ci się gałąź (main)
+2. Wpisz polecenie git add .
+3. Wpisz polecenie git commit -m "Update: Nazwa co zrobiłeś/aś"
+4. git push -u origin main
+5. wysłane
