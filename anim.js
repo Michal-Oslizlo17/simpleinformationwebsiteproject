@@ -5,7 +5,7 @@ const typeWriter = () => {
     if (index < text.length) {
         document.getElementById("header-text").innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeWriter, 100);
+        setTimeout(typeWriter, 25);
     } else {
         setTimeout(erase, 1000);
     }
@@ -15,7 +15,7 @@ const erase = () => {
     if (index > 0) {
         document.getElementById("header-text").innerHTML = text.substring(0, index - 1);
         index--;
-        setTimeout(erase, 100);
+        setTimeout(erase, 7);
     } else {
         setTimeout(typeWriter, 1000);
     }
