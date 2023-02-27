@@ -26,21 +26,6 @@ header {
   color: #FFC107;
 }
 
-nav {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
 nav a {
   color: white;
   text-decoration: none;
@@ -166,4 +151,72 @@ button:hover {
 
 #description {
   color: #a70059;
+}
+
+nav {
+  font-family: Consolas;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav .submenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  background-color: #555;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+}
+
+nav .submenu li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+nav .submenu a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav .submenu a:hover {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+nav li:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#Pink {
+  color: rgb(255, 103, 129);
 }
