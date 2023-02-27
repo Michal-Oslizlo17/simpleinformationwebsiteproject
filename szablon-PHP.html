@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website - JS </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Nasza strona - Języki programowania, życiem programisty.</h1>
+        </div>
+    </header>
+    <nav>
+        <center>
+        <ul>
+          <li>
+            <a href="#">Strona główna</a>
+          </li>
+          <li>
+            <a href="#">Materiały strony</a>
+            <ul class="submenu">
+              <li>
+                <a href="#"><text id="Pink">Info</text></a>
+              </li>
+              <li>
+                <a href="podstawowe_info-HTML.html">HTML</a>
+              </li>
+              <li>
+                <a href="podstawowe_info-CSS.html">CSS</a>
+              </li>
+              <li>
+                <a href="podstawowe_info-JS.html">JS</a>
+              </li>
+              <li>
+                <a href="podstawowe_info-PHP.html">PHP</a>
+              </li>
+              <li>
+                <a href="#"><text id="Pink">Szczegółowe info</text></a>
+              </li>
+              <li>
+                <a href="szczegolowe_info-HTML.html">HTML</a>
+              </li>
+              <li>
+                <a href="szczegolowe_info-CSS.html">CSS</a>
+              </li>
+              <li>
+                <a href="szczegolowe_info-JS.html">JS</a>
+              </li>
+              <li>
+                <a href="szczegolowe_info-PHP.html">PHP</a>
+              </li>
+              <li>
+                <a href="#"><text id="Pink">Szablony</text></a>
+              </li>
+              <li>
+                <a href="szablon-HTML.html">HTML</a>
+              </li>
+              <li>
+                <a href="szablon-CSS.html">CSS</a>
+              </li>
+              <li>
+                <a href="szablon-JS.html">JS</a>
+              </li>
+              <li>
+                <a href="szablon-PHP.html">PHP</a>
+              </li>
+          </li>
+        </ul>
+        </center>
+      </nav>
+    <main>
+        <header>
+            <div id="header-text"></div>
+        </header>
+        <h2>Witaj na podstronie informacji!</h2>
+        <p>Obecny temat to: <b>JavaScript</b></p><br>
+
+        <div id="info">
+            <text id="code">
+            &lt;?php<br>
+            $servername = "localhost";<br>
+            $username = "nazwa_uzytkownika";<br>
+            $password = "haslo";<br>
+            $dbname = "nazwa_bazy_danych";<br>
+            <br>
+            $conn = mysqli_connect($servername, $username, $password, $dbname);<br>
+            <br>
+            if (!$conn) {<br>
+                die("Połączenie nieudane: " . mysqli_connect_error());<br>
+            }<br>
+            echo "Połączenie udane";<br>
+            ?&gt;
+
+            <br><br><br><br>
+            &lt;?php<br>
+            $sql = "INSERT INTO tabela (kolumna1, kolumna2, kolumna3)<br>
+            VALUES ('wartosc1', 'wartosc2', 'wartosc3')";<br>
+            <br>
+            if (mysqli_query($conn, $sql)) {<br>
+                echo "Nowy rekord został dodany";<br>
+            } else {<br>
+                echo "Błąd: " . $sql . "&lt;br&gt;" . mysqli_error($conn);<br>
+            }<br>
+            ?&gt;
+
+            <br><br><br><br>
+            &lt;?php<br>
+            $sql = "SELECT kolumna1, kolumna2, kolumna3 FROM tabela";<br>
+            $result = mysqli_query($conn, $sql);<br>
+            <br>
+            if (mysqli_num_rows($result) > 0) {<br>
+                while($row = mysqli_fetch_assoc($result)) {<br>
+                    echo "kolumna1: " . $row["kolumna1"]. " - kolumna2: " . $row["kolumna2"]. " - kolumna3: " . $row["kolumna3"]. "&lt;br>&gt;";<br>
+                }<br>
+            } else {<br>
+                echo "Brak wyników";<br>
+            }<br>
+            <br>
+            mysqli_close($conn);<br>
+            ?&gt;</text>
+            <br><br><br><br>
+            Dlaczego wykorzystujemy PHP i podaj praktyczne przykłady:
+            <br>
+            PHP jest językiem skryptowym, który jest często wykorzystywany do tworzenia stron internetowych i aplikacji internetowych. Wykorzystuje się go do tworzenia dynamicznych stron internetowych, czyli takich, które zawierają treści, które mogą się zmieniać w zależności od czasu lub użytkownika. Przykłady zastosowań PHP to:
+            <br>
+            Formularze kontaktowe: PHP może być wykorzystywany do tworzenia formularzy kontaktowych na stronach internetowych, które umożliwiają użytkownikom przesłanie wiadomości bezpośrednio do właściciela strony.
+            <br>
+            Systemy logowania: PHP może być wykorzystywany do tworzenia systemów logowania na stronach internetowych, które umożliwiają użytkownikom logowanie się na swoje konta i dostęp do zasobów zabezpieczonych hasłem.
+            <br>
+            Sklepy internetowe: PHP może być wykorzystywany do tworzenia sklepów internetowych, które umożliwiają użytkownikom zakupy online i przetwarzanie płatności.
+            <br>
+            Blogi: PHP może być wykorzystywany do tworzenia blogów, które umożliwiają użytkownikom publikowanie treści, komentowanie wpisów i udostępnianie treści w mediach społecznościowych.
+            <br>
+            Portale społecznościowe: PHP może być wykorzystywany do tworzenia portali społeczności
+
+        </div><br><br><br><br><br>
+
+        <div id="control-panel">
+            <button id="return-button">Powrót</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script src="button.js"></script>
+<script src="anim.js"></script>
+
+</html>
